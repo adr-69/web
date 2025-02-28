@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    font-family: 'Courier New', monospace;
+    color: white;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  nav {
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 1.2cm;
+    position: sticky;
+    top: 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: cyan;
+    text-shadow: 0px 0px 3px cyan;
+    transition: 0.2s ease-in-out;
+    animation: navslide 2s ease-in;
+  }
+  @keyframes navslide {
+    from {
+      opacity: 0;
+      color: white;
+      text-shadow: 0px 0px 5px white;
+      transform: translateY(-100);
+    } to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  nav a:hover {
+    transform: scale(1.1);
+    color: white;
+    text-shadow: -3px 3px 5px black;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5;
+    height: 95vh;
+  }
+  .home {
+    text-align: center;
+    color: white;
+  }
+  .home h2 {
+    font-size: 40px;
+    color: lightcyan;
+    animation: homeIntro 2s ease-in;
+  }
+  .home h1 {
+    color: cyan;
+    font-size: 55px;
+    margin-top: -40px;
+    text-shadow: 0px 0px 5px lightblue;
+    animation: homeIntro 2s ease-in;
+  }
+  .home h3 {
+    color: cyan;
+    text-shadow: 0px 0px 5px white;
+    margin-top: -42px;
+    animation: homeIntro 2s ease-in;
+  }
+  .home hr {
+    border: 2px solid cyan;
+    box-shadow: 0px 0px 5px lightcyan;
+    animation: hrIntro 5s ease-in;
+  }
+  @keyframes hrIntro {
+    from {
+      transform: scale(0);
+      border: 1px solid blue;
+      text-shadow: 0px 0px 5px blue;
+    } to {
+      opacity: 1;
+    }
+  }
+  @keyframes homeIntro {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    } to {
+      opacity: 1;
+    }
+  }
+  .about {
+    margin: 0 auto;
+    padding: 1cm;
+    height: 60vh;
+    color: white;
+  }
+  .about h1 {
+    font-size: 30px;
+    color: cyan;
+    text-shadow: 0px 0px 5px cyan;
+  }
+  .about-loob {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .about-loob p {
+    font-weight: bold;
+    color: white;
+  }
+  .about-loob span {
+    text-shadow: 0px 0px 5px cyan;
+    color: cyan;
+  }
+  .about-loob hr {
+    border: 2px solid cyan;
+    box-shadow: 0px 0px 5px cyan;
+    animation: aboutHr 5s ease-in-out infinite;
+  }
+  @keyframes aboutHr {
+    0% {
+      opacity: 1;
+      transform: scale(-1);
+      border: 2px solid white;
+    } 50% {
+      opacity: 1;
+      border: 2px solid cyan;
+      transform: scale(0);
+    } 100% {
+      opacity: 1;
+      border: 2px solid white;
+      transform: scale(-1);
+    }
+  }
+  .about-img-logo {
+    width: 4cm;
+    height: auto;
+    filter: drop-shadow(0px 0px 1px cyan);
+  }
+  .about-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .skills {
+    margin: 0 auto;
+    padding: 1cm;
+    height: 95vh;
+    color: white;
+  }
+  .skills h1 {
+    font-size: 30px;
+    color: cyan;
+    text-shadow: 0px 0px 5px cyan;
+  }
+  .skills-img-logo {
+    width: 25px;
+    height: 25px;
+  }
+  .skills-img-box {
+    width: 30cm;
+    border: 2px solid cyan;
+    box-shadow: 0px 0px 10px cyan;
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+    align-items: center;
+    animation: skillsimgBox 2s ease-in-out infinite;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+  }
+  .skills-img-box:hover {
+      transform: scale(1.05);
+  }
+  @keyframes skillsimgBox {
+    0%  {
+      box-shadow: 0px 0px 10px cyan;
+    } 50% {
+      box-shadow: 0px 0px 20px cyan;
+    } 100% {
+      box-shadow: 0px 0px 10px cyan;
+    }
+  }
+  .skills-img-box p {
+    font-weight: bold;
+    color: cyan;
+    text-shadow: 0px 0px 3px;
+  }
+  .html-hr {
+    width: 57%;
+    margin: 0;
+    border: 1px solid cyan;
+    box-shadow: 0px 0px 3px cyan;
+  }
+  .css-hr {
+    width: 30%;
+    margin: 0;
+    border: 1px solid cyan;
+    box-shadow: 0px 0px 3px cyan;
+  }
+  .cpp-hr {
+    width: 13%;
+    margin: 0;
+    border: 1px solid cyan;
+    box-shadow: 0px 0px 3px cyan;
+  }
+  .js-hr {
+    width: 8%;
+    margin: 0;
+    border: 1px solid cyan;
+    box-shadow: 0px 0px 3px cyan;
+  }
+  .python-hr {
+    width: 5%;
+    margin: 0;
+    border: 1px solid cyan;
+    box-shadow: 0px 0px 3px cyan;
+  }
+  .cybersecurity-skills-box {
+    width: 9cm;
+    height: 6cm;
+    background-color: #111;
+    box-shadow: 0px 0px 10px cyan;
+    padding: 20px;
+    border-radius: 20px;
+    animation: skillsBox 2s ease-in-out infinite;
+    transition: 0.2s ease-in-out;
+  }
+  .cybersecurity-skills-box:hover {
+      transform: scale(1.1);
+  }
+  @keyframes skillsBox {
+      0% {
+          box-shadow: 0px 0px 10px cyan;
+      } 50% {
+          box-shadow: 0px 0px 20px cyan;
+      } 100% {
+          box-shadow: 0px 0px 10px cyan;
+      }
+  }
+  .cybersecurity-skills-list1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .creation {
+      margin: 0 auto;
+      padding: 1cm;
+      height: 120vh;
+      color: white;
+  }
+  .creation h1 {
+      font-size: 30px;
+      color: cyan;
+      text-shadow: 0px 0px 5px cyan;
+  }
+  .creation p {
+      color: cyan;
+      text-shadow: 0px 0px 5px white;
+      font-weight: bold;
+  }
+  .creation-list1 {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 10px;
+  }
+  .creation-box {
+      width: 9cm;
+      height: 8cm;
+      border-radius: 20px;
+      padding:10px;
+      box-shadow: 0px 0px 20px cyan;
+      text-align: center;
+      background-color: #111;
+      transition: 0.2s ease-in-out;
+      animation: skillsBox 2s ease-in-out infinite;
+  }
+  .creation-box:hover {
+      transform: scale(1.1);
+  }
+  .creation-box-img {
+      width: 8cm;
+      height: 7cm;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px cyan;
+  }
+  .social {
+      margin: 0 auto;
+      padding: 1cm;
+      height: 80vh;
+      color: white;
+  }
+  .social h1 {
+      font-size: 30px;
+      color: cyan;
+      text-shadow: 0px 0px 5px cyan;
+  }
+  .social p {
+      color: cyan;
+      text-shadow: 0px 0px 5px cyan;
+      font-weight: bold;
+  }
+  .social-main-box {
+      max-width: 900px;
+      padding: 1cm;
+      margin: 0 auto;
+      background-color: #111;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px cyan;
+      height: 8cm;
+  }
+  .social-box {
+      width: 5cm;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 1cm;
+      box-shadow: 0px 0px 10px cyan;
+      transition: 0.2s ease-in-out;
+      animation: socialBox 2s ease-in-out infinite;
+  }
+  .social-box:hover {
+      transform: scale(1.1);
+  }
+  @keyframes socialBox {
+      0% {
+          box-shadow: 0px 0px 10px cyan;
+      } 50% {
+          box-shadow: 0px 0px 20px cyan;
+      } 100% {
+          box-shadow: 0px 0px 10px cyan;
+      }
+  }
+  .social-box a {
+      color: cyan;
+      text-shadow: 0px 0px 3px cyan;
+      font-weight: bold;
+      text-decoration: none;
+      animation: aAni 1.5s ease-in-out infinite;
+  }
+  @keyframes aAni {
+      0% {
+          opacity: 0;
+      } 50% {
+          opacity: 1;
+      } 100% {
+          opacity: 0;
+      }
+  }
+  .social-box-logo {
+      width: 50px;
+  }
+  footer {
+      background-color: #333;
+      color: cyan;
+      font-weight: bold;
+      text-align: center;
+      padding: 0.1px;
+      margin: 0 auto;
+  }
+  @media screen and (max-width: 767px) {
+      body {
+          background-color: #111;
+      }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+      body {
+          background-color: #111;
+      }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1919px) {
+      body {
+          background-color: #111;
+      }
+  }
+  @media screen and (min-width: 1920px) {
+      body {
+          background-color: #111;
+      }
+  }
