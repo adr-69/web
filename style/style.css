@@ -96,7 +96,7 @@ body {
   .about {
     margin: 0 auto;
     padding: 1cm;
-    height: 60vh;
+    height: 100vh;
     color: white;
   }
   .about h1 {
@@ -150,7 +150,7 @@ body {
   .skills {
     margin: 0 auto;
     padding: 1cm;
-    height: 95vh;
+    height: 140vh;
     color: white;
   }
   .skills h1 {
@@ -250,7 +250,7 @@ body {
   .creation {
       margin: 0 auto;
       padding: 1cm;
-      height: 120vh;
+      height: 165vh;
       color: white;
   }
   .creation h1 {
